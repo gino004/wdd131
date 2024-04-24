@@ -6,8 +6,11 @@
     font-size: large;
 }
 
-li {
+li,
+a {
     list-style: none;
+    text-decoration: none;
+    color: aliceblue;
 }
 
 nav {
