@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(75, 77, 76);
+    min-width: 1100px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+}
+
+nav a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(42, 192, 238);
+}
+
+.dos li a {
+    display: grid;
+    place-items: center;
+    color: black;
+    margin-top: 80px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.dos a:hover {
+    color: rgb(16, 141, 179);
+}
+
+.dos h2 {
+    margin-top: 11px;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 6px;
+    gap: 7px;
+}
+
+.uno,
+.intermedio {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+#imagen_uno,
+#imagen_dos {
+    grid-row: 1 / span 4;
+    float: left;
+    border: 10px solid rgb(65, 61, 61);
+}
+
+#imagen_uno {
+    margin: 13.5px;
+}
+
+.parrafo_uno,
+.parrafo_dos {
+    float: right;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card {
+    background-color: rgb(209, 178, 77);
+    border: 1px solid rgb(158, 150, 150);
+    border-radius: 5px;
+    box-shadow: 1px 1px 18px;
+}
+
+p {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header h1 {
+    background-color: rgb(236, 195, 9);
+    padding: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 195, 9);
+    font-family: "Bebas Neue", sans-serif;
+    padding: 50px;
+    justify-content: center;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    font-size: 25px;
+    font-weight: 900;
+}
