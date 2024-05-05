@@ -1,0 +1,23 @@
+@media screen and (max-width:1032px) {
+    header,
+    main,
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+    .navigation,
+    ul,
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
