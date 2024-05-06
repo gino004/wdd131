@@ -21,7 +21,8 @@ footer {
     height: 100px;
 }
 
-header {
+header,
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,30 +37,9 @@ header {
     right: 1rem;
 }
 
-#menu::before {
-    content: "☰";
-    color: #f0f0f0;
-}
-
-#menu.open::before {
-    content: "✖";
-    color: #f0f0f0;
-}
-
-.navigation {
-    display: flex;
-}
-
-.navigation a {
-    display: none;
-}
-
-.open a {
-    display: block;
-}
-
 .navigation a:hover {
-    color: #e9ec12;
+    color: #0bf7ff;
+    text-shadow: 1px 1px 10px #01f7ff;
     font-weight: 700;
     cursor: pointer;
 }
@@ -92,6 +72,10 @@ figure img {
     box-shadow: rgb(58, 12, 58) 5px 1px 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+figcaption {
+    text-shadow: 1px 1px 10px #240c33;
 }
 
 footer {
