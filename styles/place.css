@@ -6,7 +6,7 @@
 }
 
 :root {
-    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --font-family: "Roboto", sans-serif;
     --color: rgb(6, 21, 68);
 }
 
@@ -78,6 +78,6 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: -3px;
+    margin-top: -4px;
     font-size: 1.5vw;
 }
