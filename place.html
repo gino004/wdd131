@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts about Japan</title>
+    <meta name="author" content="Gino Estrella">
+    <meta name="description" content="This page contains basic content about the data of the country of Asia - Japan.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/small.webp" media="(max-width:802px)">
+            <source srcset="images/medium.webp" media="(min_width:1920px)">
+            <img src="images/large.webp" alt="Tokyo" width="1920" height="1282" loading="lazy">
+        </picture>
+        <div class="left">
+            <h2>Data</h2>
+            <hr>
+            <ul>
+                <li><strong>Area: </strong>377,975 km</li>
+                <li><strong>Population: </strong> 126,500000</li>
+                <li><strong>Capital: </strong>Tokyo</li>
+                <li><strong>Language: </strong>Japanese</li>
+                <li><strong>Currency: </strong>Japanese Yen</li>
+                <li><strong>Time Zone: </strong>UTC +9</li>
+                <li><strong>Calling Code: </strong>+81</li>
+                <li><strong>Internet Tld: </strong>.jp</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Weather <img src="images/icon.svg" alt="weather"></h2>
+            <hr>
+            <ul>
+                <li><strong>Temperature: </strong><span id="temperature">--</span></li>
+                <li><strong>Cinditions: </strong>Cold</li>
+                <li><strong>Wind Speed: </strong><span id="wind-speed">--</span></li>
+                <li><strong>Wind Chill: </strong><span id="wind-chill">--</span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Gino Estrella|Perú</p>|
+        <p>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+
+</html>

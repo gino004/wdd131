@@ -1,0 +1,29 @@
+@media screen and (max-width:802px) {
+    header,
+    main,
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .left,
+    .right {
+        position: relative;
+        /* Cambiar la posición a relativo */
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .right h2 img {
+        display: flex;
+        width: 30%;
+        margin: 0 auto;
+        height: auto;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+}

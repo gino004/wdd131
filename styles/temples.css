@@ -21,20 +21,20 @@ footer {
     height: 100px;
 }
 
-header,
-.navigation {
+figure {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+ul {
+    display: flex;
+    gap: 1rem;
 }
 
 .navigation a:hover {
