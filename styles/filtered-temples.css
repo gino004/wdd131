@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+header,
+footer {
+    background-color: rgb(105, 13, 190);
+    height: 100px;
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#menu {
+    display: none;
+}
+
+.navigation a:hover {
+    color: #0bf7ff;
+    text-shadow: 1px 1px 10px #01f7ff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navigation ul li {
+    margin-right: 20px;
+    font-size: large;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: 0 auto; */
+}
+
+.temple-card {
+    box-shadow: rgb(58, 12, 58) 5px 1px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* max-width: 400px; */
+    background-color: rgb(226, 220, 220);
+}
+
+
+/* figcaption {
+    text-shadow: 1px 1px 10px #240c33;
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    letter-spacing: 5px;
+}
