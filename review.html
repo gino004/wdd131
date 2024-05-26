@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
+</head>
+
+<body style="background-color: rgb(32, 126, 126); color:aliceblue">
+    <h2>Thanks for your review!</h2>
+    <p>You have completed <span id=" reviewCount ">0</span> revisions.</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let reviewCount = localStorage.getItem('reviewCount');
+            reviewCount = reviewCount ? reviewCount : 0;
+            document.getElementById('reviewCount').textContent = reviewCount;
+        });
+    </script>
+</body>
+
+</html>

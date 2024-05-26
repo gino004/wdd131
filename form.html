@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+    <meta name="description" content="This is an example of how a form is designed.">
+    <meta name="author" content="Gino Estrella">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html" id="productForm">
+        <fieldset>
+            <label>Product Name  
+													<select id="productSelect" name="productSelect" required>
+													 <option value="" disabled selected>Select a Product...&#9662;</option>
+												</select>
+											</label>
+            <label>Overall Rating
+												<div class="stars">
+												<input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+            </div>
+            </label>
+            <label>Date of Installation
+             <input type="date" id="date" name="date" required>
+												</label>
+            <label>
+													Which features did you find useful in the product?
+             (Check all the apply).
+													<div>Durability</div>
+													<input type="checkbox" id="option" name="options[]" value="option">
+													<div>Ease of use</div>
+													<input type="checkbox" id="option" name="options[]" value="option">
+													<div>Performance</div>
+													<input type="checkbox" id="option" name="options[]" value="option">
+													<div>Desing</div>
+													<input type="checkbox" id="option" name="options[]" value="option">
+												</label>
+            <label>Written Review(Optional)
+            <textarea id="textarea" name="textarea"></textarea>
+												</label>
+            <label>Your Name(Optional)
+            <input type="text" id="name" name="fullname">
+												</label>
+            <label>
+													<input type="submit" value="Propose">
+												</label>
+        </fieldset>
+    </form>
+    <footer></footer>
+</body>
+
+</html>

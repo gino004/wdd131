@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 6px;
+}
+
+form,
+h1 {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+form label {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: 20px;
+}
+
+form select,
+form input[type="date"],
+form input[type="text"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form input[type="checkbox"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+}
+
+textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+form input:required {
+    border-bottom: solid 8px red;
+}
+
+form input:required:valid {
+    border-bottom: solid 8px rgba(67, 243, 14, 0.795);
+}
+
+form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+
+/* html review */
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
