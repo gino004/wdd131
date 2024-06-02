@@ -1,0 +1,44 @@
+@media screen and (max-width:1050px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* contact.html */
+
+@media screen and (max-width:1050px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* about.html */
+
+@media screen and (max-width:1050px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* destinations-html */
+
+@media screen and (max-width:1050px) {
+    .destinations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

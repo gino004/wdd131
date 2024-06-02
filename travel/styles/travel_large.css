@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Signika+Negative:wght@300..700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #0D1F2D;
+    --background-color: #E4C3AD;
+    --one-color: #546A7B;
+    --two-color: #9EA3B0;
+    --three-color: #FAE1DF;
+    --main-letter: "Signika Negative", sans-serif;
+    --secundary-letter: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--main-letter);
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 55px;
+    font-size: 25px;
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease, color 0.1s ease;
+}
+
+.navbar li a:hover {
+    color: yellow;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-image: url('../images/Hero.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+h2,
+p {
+    color: rgb(0, 0, 0);
+}
+
+p {
+    font-weight: 900;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "card01 card01 card02 card02 card02" "card03 card03 card03 card03 card03";
+    justify-content: center;
+    gap: 10px;
+    font-family: var(--secundary-letter);
+}
+
+.card01 {
+    grid-area: card01;
+}
+
+.card02 {
+    grid-area: card02;
+}
+
+.card03 {
+    grid-area: card03;
+}
+
+.card02 .sub-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card01 {
+    max-width: 550px;
+    background-color: var(--two-color);
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px;
+}
+
+.card02 {
+    max-width: 800px;
+    background-color: var(--two-color);
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px;
+}
+
+.card03 {
+    max-width: 1350px;
+    background-color: var(--two-color);
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.9;
+    border-radius: 5px;
+    font-weight: 900;
+    box-shadow: 1px 1px 10px;
+}
+
+.card03 .sub-card02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.card02 h2 {
+    text-align: center;
+}
+
+.sub-card {
+    margin-top: 5px;
+}
+
+.card02 .sub-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 30px;
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+    font-family: var(--secundary-letter);
+}
+
+
+/* about.html */
+
+.main {
+    background-image: url('../images/Imagen01.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    background-color: var(--one-color);
+    opacity: 0.9;
+    padding: 10px;
+    margin: 30px;
+    font-weight: 900;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px;
+}
+
+.about h2,
+.idea {
+    color: white;
+}
+
+
+/* contact.html */
+
+.contact {
+    background-image: url('../images/Imagen02.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    opacity: .9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
+
+
+/* destinations.html */
+
+.destinations {
+    background-image: url('../images/Imagen04.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--one-color);
+    padding: 50px;
+}
+
+.destination-grid,
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.destination,
+.offer {
+    text-align: center;
+    background-color: #e3e3e3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #007BFF;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.destinations form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.destinations label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#inquiry-form input,
+#inquiry-form select,
+#inquiry-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#inquiry-form button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#inquiry-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+    #inquiry-form {
+        padding: 15px;
+    }
+    #inquiry-form input[type="text"],
+    #inquiry-form input[type="email"],
+    #inquiry-form textarea {
+        font-size: 14px;
+    }
+    #inquiry-form button {
+        font-size: 14px;
+    }
+}

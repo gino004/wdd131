@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Estrella Travel Agency</title>
+    <meta name="description" content="This page is called Estrella Travel Agency and it helps people who want to make a safe trip and where they will find a staff prepared so that they can receive the necessary information towards their destination.">
+    <meta name="author" content="Gino Estrella">
+    <link rel="stylesheet" href="styles/travel_large.css">
+    <link rel="stylesheet" href="styles/travel.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo" loading="lazy">
+            <h1>Estrella Travel Agency🛫</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="destinations">
+        <h1 style="color: aliceblue;">Popular Destinations</h1>
+        <div id="popular-destinations" style="background-color: rgb(96, 117, 117);">
+            <div class="destination-grid">
+                <div class="destination">
+                    <h3>Machu Picchu, Peru</h3>
+                    <p>Explore the lost city of the Incas and marvel at its history and landscapes.</p>
+                </div>
+                <div class="destination">
+                    <h3>Buenos Aires, Argentina</h3>
+                    <p>Live the passion of tango and the vibrant culture of the Argentine capital.</p>
+                </div>
+            </div>
+        </div>
+        <div id="special-offers" style="background-color: rgb(96, 117, 117);">
+            <h2>Special Offers</h2>
+            <div class="offer-grid">
+                <div class="offer">
+                    <h3>Adventure Tour in Peru</h3>
+                    <p>20% discount on selected tours. Book now and save!</p>
+                </div>
+                <div class="offer">
+                    <h3>Romantic Getaway to Buenos Aires</h3>
+                    <p>Special packages for couples. Includes dinner and tango show!</p>
+                </div>
+            </div>
+        </div>
+        <div id="testimonials" style="background-color: rgb(96, 117, 117);">
+            <div class="testimonial">"Rio de Janeiro is a dream destination. Thanks to Estrella Travel Agency for an impeccable organization. " - Ana L.</div>
+            <div class="testimonial">"The trip to Buenos Aires exceeded all my expectations. The tango show was incredible. " - Carlos R.</div>
+        </div>
+        <div id="inquiry-form" style="background-color: rgb(96, 117, 117);">
+            <h2>Request More Information</h2>
+            <form>
+                <label for="destination">Destination of Interest:</label>
+                <select id="destination" name="destination">
+                 <option value="machu_picchu">Machu Picchu</option>
+                 <option value="Buenos_Aires">Buenos Aires</option>
+                 <option value="rio_de_janeiro">Rio de Janeiro</option>
+                </select>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email ">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        Contact us: +1 234 567 890 | info@estrellatravelagency.com | &copy; 2024 Estrella Travel Agency. All rights reserved.
+    </footer>
+</body>
+
+</html>
