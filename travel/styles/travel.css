@@ -1,9 +1,15 @@
 @media screen and (max-width:1050px) {
-    main {
+    header,
+    main,
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .navbar {
+        padding: 25px;
+        margin-top: 5px;
     }
 }
 
